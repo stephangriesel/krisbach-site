@@ -1,0 +1,252 @@
+body {
+  background: #000;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* WRAPPER */
+.header {
+  align-self: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "top"
+    "nav"
+    "middle"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows:
+    1fr
+    auto
+    auto;
+}
+
+/* TOP BAR */
+
+.top {
+  grid-area: top;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.logo {
+}
+
+.nav {
+  width:100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  border: solid #FFFFFF 1px;
+  padding:5px;
+  border-radius: 10px;
+  margin:2px;
+  
+}
+
+.nav-item:hover {
+  color:#999;
+  background:#FFFFFF;
+  
+}
+
+.social-top ul {
+  padding: 20px;
+}
+
+.social-top li {
+  display: none;
+  padding: 10px;
+}
+
+/* MIDDLE */
+
+.middle {
+  grid-area: middle;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.content-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url("../content/bg1.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.content-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("../content/bg1.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.content-three video {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* BOTTOM */
+
+.bottom {
+  grid-area: footer;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url("../content/4m.jpg") no-repeat;
+    background-size: 100% 100vh;
+    background-position-y: -300px
+}
+
+/* NEWSLETTER */
+
+.button {
+  background:#FFFFFF;
+  border:none;
+  padding:5px;
+  margin:10px;
+  text-transform: uppercase;
+}
+
+.email-form {
+  width:35%;
+}
+
+.newsletter-subscribe {
+}
+
+.social-more {
+}
+
+.social-bottom ul {
+  padding: 20px;
+}
+
+.social-bottom li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.music-sources li {
+  display: inline-block;
+  padding: 15px;
+}
+
+
+@media screen and (min-width: 950px) {
+  body {
+    background: rgb(0, 0, 0);
+  }
+  
+  /* TOP */
+  
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      "top nav nav"
+      "middle middle middle"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:
+      1fr
+      auto
+      auto;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    border: solid #FFFFFF 1px;
+    padding:5px;
+    border-radius: 10px;
+    margin:5px;
+    
+  }
+
+  .nav-item:hover {
+  }
+
+  /* MIDDLE */
+  .content-one {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("../content/bg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:70px 50px;
+  }
+  
+  .content-two {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url("../content/bg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:70px 50px;
+  }
+  
+  .content-three video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /* BOTTOM */
+
+  .bottom {
+    position: absolute;;
+    padding-top:50px;
+    width:100%;
+    height:60vh;
+      /*background-color:rgb(58, 58, 58);*/
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url("../content/4.jpg") no-repeat;
+      background-size: 100% 500px;
+      background-position-y: -150px;
+    }
+
+  .social-more {
+      float:left;
+      width:50%;
+  }
+
+  .newsletter-subscribe {
+      float:left;
+      width:50%;
+      padding-top:60px;
+  }
+
+  .social-bottom li {
+    display: inline-block;
+    padding: 15px;
+    text-align: right;
+  }
+  
+  .music-sources li {
+    display: inline-block;
+    padding: 15px;
+    text-align: right;
+  }
+}
+
+
+
+
