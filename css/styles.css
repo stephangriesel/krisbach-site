@@ -169,6 +169,17 @@ li {
   padding: 15px;
 }
 
+/* CONTACT FORM */
+.c-lrg {
+  opacity: 0.9;
+  text-align: left;
+}
+
+.c-label label{
+  color:rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
 
 @media screen and (min-width: 1200px) {
   body {
