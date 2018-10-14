@@ -7,10 +7,10 @@ body {
 }
 
 a:link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 a:hover {
   color: rgb(131, 131, 131);
@@ -54,32 +54,29 @@ li {
 }
 
 .nav {
-  width:100%;
+  width: 100%;
   align-content: center;
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-item {
   display: block;
-  width: 100%;
   text-decoration: none;
   text-transform: uppercase;
-  color:#FFFFFF;
-  border: solid #FFFFFF 1px;
-  padding:15px;
-  border-radius: 10px;
+  color: #ffffff;
+  border-bottom: solid #ffffff 1px;
+  padding: 15px;
   font-size: 1.8em;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .nav-item:hover {
-  color:#999;
-  background:#FFFFFF;
-  
+  color: #999;
+  background: #ffffff;
 }
 
 .social-top ul {
@@ -124,35 +121,35 @@ li {
 .bottom {
   grid-area: footer;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
     url("../content/4m.jpg") no-repeat;
-    background-size: 100% 100vh;
-    background-position-y: -300px
+  background-size: 100% 100vh;
+  background-position-y: -300px;
 }
 
 /* NEWSLETTER */
 
 .button {
-  background:#FFFFFF;
-  border:none;
-  padding:15px;
-  margin-left:10px;
+  background: #ffffff;
+  border: none;
+  padding: 15px;
+  margin-left: 10px;
   text-transform: uppercase;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .email-form {
-  width:35%;
-  padding:15px;
-  font-size:25px;
+  width: 35%;
+  padding: 15px;
+  font-size: 25px;
 }
 
 .newsletter-subscribe {
-  padding-top:40px;
+  padding-top: 40px;
 }
 
 .social-more {
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .social-bottom ul {
@@ -175,19 +172,18 @@ li {
   text-align: left;
 }
 
-.c-label label{
-  color:rgba(255, 255, 255, 1);
+.c-label label {
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
 }
-
 
 @media screen and (min-width: 1200px) {
   body {
     background: rgb(0, 0, 0);
   }
-  
+
   /* TOP */
-  
+
   .wrapper {
     display: grid;
     grid-template-areas:
@@ -205,11 +201,11 @@ li {
     display: inline;
     text-decoration: none;
     text-transform: uppercase;
-    color:#FFFFFF;
-    border: solid #FFFFFF 1px;
+    color: #ffffff;
+    border: solid #ffffff 1px;
     border-radius: 10px;
-    margin:5px;
-    font-size:1.4em;
+    margin: 5px;
+    font-size: 1.4em;
   }
 
   .nav-item:hover {
@@ -221,20 +217,20 @@ li {
       url("../content/bg1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding:70px 50px;
+    padding: 70px 50px;
   }
-  
+
   .content-two {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url("../content/bg1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding:70px 50px;
+    padding: 70px 50px;
   }
-  
+
   .content-three video {
-    padding-top:50px;
-    width:800px;
+    padding-top: 50px;
+    width: 800px;
     min-width: 60%;
     min-height: 100%;
   }
@@ -242,25 +238,35 @@ li {
   /* BOTTOM */
 
   .bottom {
-    position: absolute;;
-    padding-top:70px;
-    width:100%;
-    height:40vh;
-      /*background-color:rgb(58, 58, 58);*/
-      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../content/4.jpg") no-repeat;
-      background-size: 100% 600px;
-      background-position-y: -150px;
-    }
+    position: absolute;
+    padding-top: 70px;
+    width: 100%;
+    height: 40vh;
+    /*background-color:rgb(58, 58, 58);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url("../content/4.jpg") no-repeat;
+    background-size: 100% 600px;
+    background-position-y: -150px;
+  }
+
+  .bottom:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset 0px 80px 200px black;
+  }
 
   .social-more {
-      float:left;
-      width:50%;
+    float: left;
+    width: 50%;
   }
 
   .newsletter-subscribe {
-      float:left;
-      width:50%;
+    float: left;
+    width: 50%;
   }
 
   .social-bottom li {
@@ -268,14 +274,10 @@ li {
     padding: 15px;
     text-align: right;
   }
-  
+
   .music-sources li {
     display: inline-block;
     padding: 15px;
     text-align: right;
   }
 }
-
-
-
-
