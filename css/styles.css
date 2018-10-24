@@ -252,8 +252,8 @@ li {
     /*background-color:rgb(58, 58, 58);*/
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
       url("../content/4.jpg") no-repeat;
-    background-size: 100% 600px;
-    background-position-y: -150px;
+    background-size: 100% 800px;
+    background-position-y: -300px;
   }
 
   .social-more {
