@@ -114,9 +114,9 @@ li {
 
 .content-three img {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url("../content/bg2.gif") repeat-x no-repeat !important;
-  width: 60%;
-  height: 60%;
+    url("../content/bg.gif") !important;
+  width: 70%;
+  height: 70%;
 }
 
 /* BOTTOM */
@@ -208,7 +208,13 @@ li {
 
 .listen {
   display:inline-block;
-  padding:20px;
+  width:100px;
+  padding-right:20px;
+}
+.listen2 {
+  display:inline-block;
+  width:120px;
+  padding-left:40px;
 }
 
 /* CONTACT FORM */
@@ -273,12 +279,15 @@ li {
     padding: 70px 50px;
   }
 
-  .content-three img {
+  .content-three video {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-      url("../content/bg2.gif") repeat-x no-repeat !important;
-    width: 60%;
-    height: 60%;
-  }
+      url("../content/bg2.gif") !important;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    width: 800px;
+    min-width: 60%;
+    min-height: 100%;
   }
 
   /* BOTTOM */
