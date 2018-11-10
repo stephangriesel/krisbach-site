@@ -100,14 +100,14 @@ li {
 
 .content-one {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url("../content/bg1.jpeg");
+    url("");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .content-two {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url("../content/bg1.jpeg");
+    url("");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -125,7 +125,7 @@ li {
   grid-area: footer;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("../content/4m.jpg") no-repeat;
+    url("") no-repeat;
   background-size: 100% 100vh;
   background-position-y: -300px;
 }
@@ -206,15 +206,19 @@ li {
   padding: 15px;
 }
 
-.listen {
+.listen-itunes {
   display:inline-block;
   width:100px;
   padding-right:20px;
+  padding-top:20px;
 }
-.listen2 {
+
+.listen-spotify {
   display:inline-block;
-  width:120px;
-  padding-left:40px;
+  width:100px;
+  padding-right:20px;
+  padding-top:20px;
+  text-align: right;
 }
 
 /* CONTACT FORM */
@@ -265,7 +269,7 @@ li {
   /* MIDDLE */
   .content-one {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-      url("../content/bg1.jpeg");
+      url("");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 50px;
@@ -273,7 +277,7 @@ li {
 
   .content-two {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-      url("../content/bg1.jpeg");
+      url("");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 50px;
@@ -299,7 +303,7 @@ li {
     height: 40vh;
     /*background-color:rgb(58, 58, 58);*/
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-      url("../content/4.jpg") no-repeat;
+      url("") no-repeat;
     background-size: 100% 800px;
     background-position-y: -300px;
   }
